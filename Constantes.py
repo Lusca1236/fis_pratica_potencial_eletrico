@@ -1,7 +1,7 @@
 class Constantes:
-    @property
-    def constanteEletrostatica(self):
-        return 8.99e9
-    @property
-    def pontos(self):
+    @staticmethod
+    def constanteEletrostatica():
+        return 9e9
+    @staticmethod
+    def pontos():
         return 100
