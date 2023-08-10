@@ -33,7 +33,7 @@ class Grafico:
         plt.title(f"Potencial elétrico: {potencial:.2f} Volts")
         plt.scatter(x, y, s=200, marker='o', c='purple')
         plt.text(x, y, f"({x:.2f}, {y:.2f})", ha='center', va='bottom')
-def desenha_linha_equipotencial(self, x, y):
+    def desenha_linha_equipotencial(self, x, y):
 
         # Calcula o potencial do lugar clicado
         potencial_alvo = Carga.calcula_potencial(x, y, self.cargas)
@@ -44,7 +44,7 @@ def desenha_linha_equipotencial(self, x, y):
         # Faz a linha equipotencial com base nos valores iguais ao potencial do ponto clicado
         plt.contour(self.X, self.Y, self.VALORES_Q, levels=[potencial_alvo], colors='grey')
 
-def atualiza_grafico(self, x, y):
+    def atualiza_grafico(self, x, y):
         plt.clf()
 
         for carga in self.cargas:
